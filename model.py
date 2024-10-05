@@ -13,8 +13,8 @@ import streamlit as st
 
 
 
-groq_key = st.secrets["GOOGLE_API_KEY"]
-google_key = st.secrets["GROQ_API_KEY"]
+google_key = st.secrets["GOOGLE_API_KEY"]
+groq_key = st.secrets["GROQ_API_KEY"]
 
 # Reading the text file
 with open("fetchedata.txt", "r", encoding='latin1') as file:
