@@ -3,12 +3,12 @@ from model import Workflow
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langchain_core.messages import AIMessage , HumanMessage , SystemMessage
-import os
 
-load_dotenv()
 
-groq_key = os.getenv("GROQ_API_KEY")
-google_key = os.getenv("google_key")
+groq_key = st.secrets["GROQ_API_KEY"]
+google_key = st.secrets["GOOGLE_API_KEY"]
+
+
 
 llm = ChatGroq(name = "gemma2-9b-it" , api_key = groq_key)
 
