@@ -106,8 +106,8 @@ class Workflow:
         if self.vector_db != "":
             db = FAISS.load_local(self.vector_db, embeddings=tokenizer, allow_dangerous_deserialization=True)
 
-            thresh = 0.75
-            res = db.similarity_search_with_score(question, k=195)
+            thresh = 0.65
+            res = db.similarity_search_with_score(question, k=196)
 
             recommendations = []
             for doc, score in res:
