@@ -13,10 +13,9 @@ import re
 from dotenv import load_dotenv
 
 
-load_dotenv()
 
-groq_key = os.getenv("GROQ_API_KEY")
-google_key = os.getenv("google_key")
+groq_key = st.secrets["GOOGLE_API_KEY"]
+google_key = st.secrets["GROQ_API_KEY"]
 
 # Reading the text file
 with open("fetchedata.txt", "r", encoding='latin1') as file:
@@ -43,6 +42,7 @@ for course in courses:
     for chunk in chunks:
         doc = Document(page_content=chunk, metadata={"course_name": course_name})
         all_docs.append(doc)
+
 
 # Vector db
 tokenizer = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=google_key)
