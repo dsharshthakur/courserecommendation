@@ -117,7 +117,7 @@ class Workflow:
                         recommendations.append(course_name)
 
         prompt = f'''
-        Below are some course recommendations from Analytics.com, based on your search:
+        Below are some course recommendations from Analyticsvidhya.com, based on your search:
         {str(recommendations)}
         '''
 
