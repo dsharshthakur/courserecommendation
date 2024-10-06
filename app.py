@@ -59,7 +59,7 @@ Implemented the **Google Gemma** model via **ChatGroq** for natural language pro
 """)
 
 # Add image showing architecture
-st.image('path_to_image/architecture_diagram.png', caption='System Architecture')
+st.image('architecture.jpeg', caption='System Architecture')
 
 st.markdown("""
 **Search System:**  
