@@ -47,9 +47,7 @@ with tab1:
         st.info(ai_response)
 
 with tab2:
-  st.markdown("""
-### Project: Course Search Tool for Analytics Vidhya
-
+ st.markdown("""
 **Objective:**  
 Developed a smart search tool that allows users to find relevant free courses on Analytics Vidhya efficiently.
 
@@ -57,11 +55,16 @@ Developed a smart search tool that allows users to find relevant free courses on
 Utilized **BeautifulSoup** and **Selenium** to scrape course data, including titles, descriptions, and curricula from the Analytics Vidhya platform.
 
 **LLM Integration:**  
-Implemented the **Google Gemma** model via **ChatGroq** for natural language processing, allowing users to input queries in natural language and receive refined search results.
+Implemented the **Google Gemma** model via **ChatGroq** for natural language processing, allowing users to input queries in natural language and receive refined search results. The model was integrated using **LangGraph** to manage the interaction flow and logic between components.
+""")
 
+# Add image showing architecture
+st.image('path_to_image/architecture_diagram.png', caption='System Architecture')
+
+st.markdown("""
 **Search System:**  
 Built a robust search mechanism that leverages a vector database to retrieve the most relevant courses based on user queries.
 
 **Deployment:**  
-Deployed the application using **Streamlit** for public accessibility, ensuring ease of use and interaction. 
+Deployed the application using **Streamlit** for public accessibility, ensuring ease of use and interaction.
 """)
