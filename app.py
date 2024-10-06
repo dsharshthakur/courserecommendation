@@ -59,7 +59,7 @@ with tab2:
             """)
             
             # Add image showing architecture
-            st.image('architecture.jpeg', caption='System Architecture')
+            st.image('architecture.png', caption='System Architecture')
             
             st.markdown("""
             **Search System:**  
