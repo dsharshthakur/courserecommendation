@@ -63,8 +63,5 @@ Implemented the **Google Gemma** model via **ChatGroq** for natural language pro
 Built a robust search mechanism that leverages a vector database to retrieve the most relevant courses based on user queries.
 
 **Deployment:**  
-Deployed the application using **Streamlit** for public accessibility, ensuring ease of use and interaction.
-
-**Access:**  
-The tool is hosted and accessible on **Streamlit**. [Provide your Streamlit link here]
+Deployed the application using **Streamlit** for public accessibility, ensuring ease of use and interaction. 
 """)
