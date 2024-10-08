@@ -124,6 +124,4 @@ class Workflow:
         ai_response = AIMessage(content=prompt)
         return {"messages": [ai_response]}  # Ensure to return "messages"
 
-    def get_state(self) -> State:
-        return self.state
 
